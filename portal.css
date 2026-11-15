@@ -1,0 +1,275 @@
+
+/* =================================
+   ISBAT UNIVERSITY STUDENT PORTAL
+   External Stylesheet
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fa;
+    color: #252538;
+}
+
+/* Fixed Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background: #1A1A2E;
+    color: white;
+    padding: 25px 15px;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.student-info {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.student-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #e0a526;
+    color: #1A1A2E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto 12px;
+}
+
+.student-info h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.student-info p {
+    font-size: 12px;
+    color: #b7b7c9;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #d5d5e0;
+    text-decoration: none;
+    padding: 13px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: #30304d;
+    color: #ffffff;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 200px;
+    padding: 35px;
+    min-height: 100vh;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #77778a;
+    font-size: 14px;
+}
+
+.date {
+    color: #666678;
+    font-size: 14px;
+}
+
+/* Summary Cards */
+.metrics {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.metric-card {
+    flex: 1;
+    min-width: 180px;
+    background: white;
+    border: 1px solid #e2e4ec;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.metric-card h3 {
+    font-size: 14px;
+    color: #77778a;
+    margin-bottom: 15px;
+}
+
+.metric-card .value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1A1A2E;
+}
+
+.metric-card .description {
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+}
+
+/* Section Headings */
+.section-title {
+    font-size: 19px;
+    margin-bottom: 18px;
+}
+
+/* General Content Cards */
+.content-card {
+    background: white;
+    border: 1px solid #e2e4ec;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 25px;
+}
+
+/* Tables */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e2e4ec;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+th {
+    background: #1A1A2E;
+    color: white;
+    padding: 15px 12px;
+    text-align: left;
+    font-size: 13px;
+}
+
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #eeeeF2;
+    font-size: 13px;
+}
+
+tr:hover td {
+    background: #f8f9fc;
+}
+
+/* Course Status */
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 160px;
+        padding: 20px 10px;
+    }
+
+    .main-content {
+        margin-left: 160px;
+        padding: 20px 12px;
+    }
+
+    .page-header h1 {
+        font-size: 21px;
+    }
+
+    .metric-card {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 65px;
+        padding: 15px 5px;
+    }
+
+    .logo {
+        font-size: 11px;
+        writing-mode: vertical-rl;
+        margin: 10px auto 25px;
+    }
+
+    .student-info h3,
+    .student-info p {
+        display: none;
+    }
+
+    .student-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .sidebar nav a {
+        font-size: 0;
+        text-align: center;
+        padding: 13px 3px;
+    }
+
+    .sidebar nav a::first-letter {
+        font-size: 16px;
+    }
+
+    .main-content {
+        margin-left: 65px;
+        padding: 15px 10px;
+    }
+}
